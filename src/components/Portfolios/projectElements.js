@@ -3,7 +3,7 @@ import colors from "../../color";
 import { Link as LinkRouter} from "react-router-dom";
 
 export const ProjectContainer = styled.div`
-    height: 860px;
+    height: 760px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,7 +77,7 @@ export const ProjectsH1 = styled.h1`
 export const ProjectH2 = styled.h2`
     text-size: 1.5rem;
     text-align: center;
-    color: ${colors.primary};
+    color: ${colors.black};
     font-size: 1rem;
     margin-bottom: 10px;
 `;

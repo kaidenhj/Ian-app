@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import {FooterContainer, 
     FooterWrapper, 
     FooterLinksContainer, 
@@ -32,7 +32,7 @@ const Footer = () => {
                         <FooterLinksWrapper>
                             <FooterLinkItems>
                                 <FooterLinkTitle>Links:</FooterLinkTitle>
-                                <FooterInternalRoute to='/exRoute'>Ex. Route</FooterInternalRoute>
+                                <FooterInternalRoute to='/resume'>Resume</FooterInternalRoute>
                                 <FooterInternalLink onClick={() => scrollToSection('home')}>Home</FooterInternalLink>
                                 <FooterInternalLink onClick={() => scrollToSection('about')}>About</FooterInternalLink>
                                 <FooterInternalLink onClick={() => scrollToSection('projects')}>Projects</FooterInternalLink>
@@ -50,11 +50,8 @@ const Footer = () => {
                             <SocialLogo onClick={() => scrollToSection('home')}>Kaiden Jones</SocialLogo>
                             <WebsiteRights>Kaiden Jones © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                             <SocialIcons>
-                                <SocialIconLink href='https://www.linkedin.com/in/kaiden-jones-16888b2b2/' target='_blank' aria-label='LinkedIn'>
+                                <SocialIconLink href='https://www.linkedin.com/in/iandenshaw/' target='_blank' aria-label='LinkedIn'>
                                     <FaLinkedin />
-                                </SocialIconLink>
-                                <SocialIconLink href='https://github.com/kaidenhj' target='_blank' aria-label='Github'>
-                                    <FaGithub />
                                 </SocialIconLink>
                             </SocialIcons>
                         </SocialMediaWrap>

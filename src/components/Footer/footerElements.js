@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import colors from '../../color';
 import { Link as LinkScroll} from 'react-scroll';
 import { Link as LinkRouter} from 'react-router-dom';
 
 export const FooterContainer = styled.footer`
-    background-color: #101522;
+    background-color: ${colors.black};
 `;
 
 export const FooterWrapper = styled.div`
@@ -56,40 +57,40 @@ export const FooterLinkTitle = styled.h1`
 `;
 
 export const FooterInternalLink = styled(LinkScroll)`
-    color: #fff;
+    color: ${colors.white};
     text-decoration: none;
     margin-bottom: 0.5rem;
     font-size: 14px;
     cursor: pointer;
 
     &:hover{
-        color: #63d2ff;
+        color: ${colors.primary};
         transition: 0.3s ease-out;
     }
 `;
 
 export const FooterInternalRoute = styled(LinkRouter)`
-    color: #fff;
+    color: ${colors.white};
     text-decoration: none;
     margin-bottom: 0.5rem;
     font-size: 14px;
     cursor: pointer;
 
     &:hover{
-        color: #63d2ff;
+        color: ${colors.primary};
         transition: 0.3s ease-out;
     }
 `;
 
 export const FooterExternalLink = styled.a`
-    color: #fff;
+    color: ${colors.white};
     text-decoration: none;
     margin-bottom: 0.5rem;
     font-size: 14px;
     cursor: pointer;
 
     &:hover{
-        color: #63d2ff;
+        color: ${colors.primary};
         transition: 0.3s ease-out;
     }
 `;
@@ -112,7 +113,7 @@ export const SocialMediaWrap = styled.div`
 `;
 
 export const SocialLogo = styled(LinkScroll)`
-    color: #fff;
+    color: ${colors.white};
     justify-self: start;
     cursor: pointer;
     text-decoration: none;
@@ -121,10 +122,15 @@ export const SocialLogo = styled(LinkScroll)`
     align-items: center;
     margin-bottom: 16px;
     font-weight: bold;
+
+    &:hover{
+        color: ${colors.primary};
+        transition: 0.3s ease-out;
+    }
 `;
 
 export const WebsiteRights = styled.small`
-    color: #fff;
+    color: ${colors.white};
     margin-bottom: 16px;
 `;
 
@@ -136,8 +142,13 @@ export const SocialIcons = styled.div`
 `;
 
 export const SocialIconLink = styled.a`
-    color: #fff;
+    color: ${colors.white};
     font-size: 24px;
+
+    &:hover{
+        color: ${colors.primary};
+        transition: 0.3s ease-out;
+    }
 `;
 
 
