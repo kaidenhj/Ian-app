@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import colors from '../../color';
 import { Link as LinkRouter } from 'react-router-dom';
 
 export const Container = styled.div`
@@ -11,10 +12,14 @@ export const Container = styled.div`
     top: 0;
     z-index: 0;
     overflow: hidden;
-    background: linear-gradient(108deg, rgba(76,163,196,1) 0%, rgba(99,210,255,1) 100%);
+    background: ${colors.tan};
 `
 
 export const Icon = styled(LinkRouter)`
+    height: 45px;
+    width: 250px;
+    border-radius: 75px;
+    white-space: nowrap;
     position: absolute;
     top: 20px; /* Adjust this value as needed */
     left: 32px;
@@ -23,11 +28,15 @@ export const Icon = styled(LinkRouter)`
     font-weight: 700;
     font-size: 32px;
     cursor: pointer;
-
+    align-content: center;
+    display: flex;
+    justify-content: center;
 
     &:hover {
-        color: #010606;
-    }
+        background: ${colors.primary};
+        color: ${colors.white};
+        transition: 0.2s all ease-in-out;
+
 
     @media screen and (max-width: 480px) {
         top: 10px;

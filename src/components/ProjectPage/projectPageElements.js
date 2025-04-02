@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import colors from "../../color";
 import { Link as LinkRouter } from "react-router-dom";
 
 export const SocialIconLink = styled.a`
@@ -8,7 +9,7 @@ export const SocialIconLink = styled.a`
 
 export const ProjectContainer = styled.div`
     color: #fff;
-    background: ${({lightbg}) => (lightbg ? '#f9f9f9' : '#010606')};
+    background: ${({lightbg}) => (lightbg ? colors.tan : colors.black)};
 `;
 
 export const Icon = styled(LinkRouter)`
@@ -22,7 +23,7 @@ export const Icon = styled(LinkRouter)`
     cursor: pointer;
     
     &:hover {
-        color: #63d2ff;
+        color: ${colors.primary};
     }
 
     @media screen and (max-width: 480px) {

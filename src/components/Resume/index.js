@@ -4,10 +4,10 @@ import { PdfIframe, Icon, Container } from "./resumeElements";
 const Resume = () => {
   return (
     <Container>
-      <Icon to='/'>Kaiden Jones</Icon>
+      <Icon to='/'>Ian Denshaw</Icon>
       <PdfIframe 
         title="resume document" 
-        src="/Kaiden_Jones_Resume_07.pdf">
+        src="/architecture_student_resume.pdf">
       </PdfIframe>
     </Container>
   );
