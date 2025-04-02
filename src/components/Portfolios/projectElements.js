@@ -41,7 +41,7 @@ export const ProjectsWrapper = styled.div`
 export const ProjectCard = styled(LinkRouter)`
     color: ${colors.black};
     text-decoration: none;
-    background: ${colors.white};
+    background: ${colors.tan};
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

@@ -2,29 +2,32 @@ import styled from "styled-components";
 import colors from "../../color";
 import { Link as LinkRouter } from "react-router-dom";
 
-export const SocialIconLink = styled.a`
-    color: #fff;
-    font-size: 24px;
-`;
-
 export const ProjectContainer = styled.div`
     color: #fff;
-    background: ${({lightbg}) => (lightbg ? colors.tan : colors.black)};
+    background: ${colors.tan};
 `;
 
 export const Icon = styled(LinkRouter)`
+    height: 45px;
+    width: 250px;
+    border-radius: 75px;
+    white-space: nowrap;
     position: absolute;
-    top: 20px;
+    top: 20px; /* Adjust this value as needed */
     left: 32px;
     text-decoration: none;
     color: #fff;
     font-weight: 700;
     font-size: 32px;
     cursor: pointer;
-    
+    align-content: center;
+    display: flex;
+    justify-content: center;
+
     &:hover {
-        color: ${colors.primary};
-    }
+        background: ${colors.primary};
+        color: ${colors.white};
+        transition: 0.2s all ease-in-out;
 
     @media screen and (max-width: 480px) {
         top: 10px;
@@ -91,13 +94,6 @@ export const ProjectH2 = styled.h2`
 
 export const ProjectText = styled.p`
     margin-bottom: 10px;
-`;
-
-export const ProjectLink = styled.div`
-    align-items: center;
-    display: flex;
-    margin-bottom: 15px;
-    padding: 0 15px;
 `;
 
 export const ProjectColumns = styled.div`

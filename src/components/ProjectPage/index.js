@@ -1,13 +1,12 @@
 import React from "react";
 import { ProjectContainer, ProjectH1, ProjectWrapper, ProjectIcon,
-    ProjectSection, ProjectH2, ProjectText, ProjectLink, SocialIconLink,
+    ProjectSection, ProjectH2, ProjectText,
     ProjectColumns, Column1, Column2, ProjectList, Item, Icon} from "./projectPageElements";
-import { FaGithub } from 'react-icons/fa';
 
 const ProjectPage = ({lightbg, id, headline, img, description, link, tech, roles, challenges, solutions, tldr}) => {
     return (
         <ProjectContainer lightbg={lightbg} id={id}>
-            <Icon to='/'>Kaiden Jones</Icon>
+            <Icon to='/'>Ian Denshaw</Icon>
             <ProjectWrapper>
                 <ProjectH1>{headline}</ProjectH1>
                 <ProjectIcon src={img} /> 
@@ -15,11 +14,6 @@ const ProjectPage = ({lightbg, id, headline, img, description, link, tech, roles
                     <ProjectH2>TLDR:</ProjectH2>
                     <ProjectText>{tldr}</ProjectText>
                 </ProjectSection>
-                <ProjectLink>
-                    <SocialIconLink href='https://github.com/kaidenhj' target='_blank' aria-label='Github'>
-                        <FaGithub />{link}
-                    </SocialIconLink>    
-                </ProjectLink>
                 <ProjectSection>
                     <ProjectH2>Description:</ProjectH2>
                     <ProjectText>{description}</ProjectText>
