@@ -41,7 +41,7 @@ export const NavItem = styled.li`
 
     ${({ active }) => active && `
         transition: all 0.3s ease-in-out;
-        border-bottom: 3px solid ${colors.primary};
+        border-bottom: 5px solid ${colors.black};
         font-weight: bold;
     `}
 `;

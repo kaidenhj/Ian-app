@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import colors from '../../color'
 
 export const InfoContainer = styled.div`
-    color : #fff;
-    background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
+    color : ${colors.white};
+    background: ${({lightBg}) => (lightBg ? colors.tan : colors.black)};
     width: 100%;
 
     @media screen and (max-width: 768px) {
@@ -68,7 +69,7 @@ export const TextWrapper = styled.div`
 `
 
 export const Heading = styled.h1`
-    color: #63d2ff;
+    color: ${colors.black};
     margin-bottom: 18px;
     margin-top: 24px;
     font-size: 48px;
@@ -86,7 +87,7 @@ export const SubTitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+    color: ${({ darkText }) => (darkText ? colors.black : colors.white)};
 
     @media screen and (max-width: 768px) {
         font-size: 16px; // Adjust subtitle font size for small screens

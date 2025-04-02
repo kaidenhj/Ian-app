@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
-// import { Button } from '../ButtonElement'
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, ImgWrap, Img, FormWrap, Form, FormH1, FormH2, FormLabel, FormTextArea
  } from "./contactElements";
 import { FormInput } from "./contactElements";
@@ -53,7 +52,7 @@ const Contact = () => {
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                                <Img src={require('../../images/img-2.svg').default} alt='People sitting on text boxes' />
+                                <Img src={require('../../images/img-2.jpg')} alt='People sitting on text boxes' />
                             </ImgWrap>
                         </Column2>
                     </InfoRow>

@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import colors from '../../color'
 
 export const InfoContainer = styled.div`
     color : #fff;
-    background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
+    background: ${({lightBg}) => (lightBg ? colors.tan : colors.white )};
     width: 100%;
 
     @media screen and (max-width: 768px) {

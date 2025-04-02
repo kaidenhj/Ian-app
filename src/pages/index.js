@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar";
 import HeroSection from "../components/HeroSection";
 import TileSection from "../components/tileSection";
 import { homeObjOne } from "../components/tileSection/data"
-import Projects from "../components/Projects";
+import Portfolio from "../components/Portfolios";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 
@@ -21,7 +21,7 @@ const Home = () => {
             <NavBar toggle={toggle} />
             <HeroSection id='home' />
             <TileSection id='about' {...homeObjOne}/>
-            <Projects id='projects' />
+            <Portfolio id='portfolio' />
             <Contact id='contact'/>
             <Footer/>
         </>

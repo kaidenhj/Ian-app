@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import colors from "../../color";
 import { Link as LinkRouter} from "react-router-dom";
 
 export const ProjectContainer = styled.div`
@@ -7,7 +8,7 @@ export const ProjectContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #010606;
+    background: ${colors.white};
 
     @media screen and (max-width: 768px) {
         height: 1100px;
@@ -32,21 +33,21 @@ export const ProjectsWrapper = styled.div`
     }
     
     @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         padding: 0 20px;
     }
 `;
 
 export const ProjectCard = styled(LinkRouter)`
-    color: #010606;
+    color: ${colors.black};
     text-decoration: none;
-    background: #f9f9f9;
+    background: ${colors.white};
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    height: 340px;
+    height: 360px;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
@@ -58,14 +59,14 @@ export const ProjectCard = styled(LinkRouter)`
     }`;
 
 export const ProjectIcon = styled.img`
-    height: 160px;
-    width: 160px;
+    height: 200px;
+    width: 200px;
     margin-bottom: 10px;
 `;
 
 export const ProjectsH1 = styled.h1`
     font-size: 48px;
-    color: #63d2ff;
+    color: ${colors.black};
     margin-bottom: 64px;
 
         @media screen and (max-width: 480px) {
@@ -74,8 +75,9 @@ export const ProjectsH1 = styled.h1`
 `;
 
 export const ProjectH2 = styled.h2`
+    text-size: 1.5rem;
     text-align: center;
-    color: #010606;
+    color: ${colors.primary};
     font-size: 1rem;
     margin-bottom: 10px;
 `;

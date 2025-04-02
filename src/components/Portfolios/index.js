@@ -1,13 +1,13 @@
 import React from "react";
 import { ProjectContainer, ProjectsH1, ProjectsWrapper, ProjectCard, ProjectIcon, ProjectH2, ProjectP } from "./projectElements";
-import Icon1 from "../../images/utilities-img-2.png";
-import Icon2 from "../../images/tame-img-2.png"; 
-import Icon3 from "../../images/sam-img-2.svg";
+import Icon1 from "../../images/project-1.jpg";
+import Icon2 from "../../images/project-2.jpg"; 
+import Icon3 from "../../images/project-3.jpg";
 
-const Projects = () => {
+const Portfolio = () => {
     return (
-        <ProjectContainer id="projects">
-            <ProjectsH1>Projects</ProjectsH1>
+        <ProjectContainer id="portfolio">
+            <ProjectsH1>Portfolio</ProjectsH1>
             <ProjectsWrapper>
                 <ProjectCard to='/utilitiesProject'>
                     <ProjectIcon src={Icon1} />
@@ -29,4 +29,4 @@ const Projects = () => {
     );
 }
 
-export default Projects;
+export default Portfolio;
