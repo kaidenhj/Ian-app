@@ -44,6 +44,9 @@ export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 
     @media screen and (max-width: 768px) {
         width: 100%; // Full width on mobile
@@ -55,6 +58,9 @@ export const Column2 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col2;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 
     @media screen and (max-width: 768px) {
         width: 100%; // Full width on mobile
@@ -109,12 +115,23 @@ export const ImgWrap = styled.div`
     height: 10%;
 
     @media screen and (max-width: 768px) {
-        max-width: 100%; // Full width on smaller screens
+        display: flex;
+        justify-items: center;
+        align-content: center;
+        width: 50%; // Full width on smaller screens
+        height: 50%;
     }
 `
 
 export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
-    padding-right: 0;
+    padding-right: 0;@media screen and (max-width: 768px) {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        transition: all 0.2s ease
+        max-width: 25%; // Full width on smaller screens
+        max-height: 25%;
+    }
 `

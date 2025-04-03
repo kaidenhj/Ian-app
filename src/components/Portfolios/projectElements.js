@@ -10,8 +10,8 @@ export const ProjectContainer = styled.div`
     align-items: center;
     background: ${colors.white};
 
-    @media screen and (max-width: 768px) {
-        height: 1100px;
+    @media screen and (max-width: 1000px) {
+        height: 1200px;
     }
 
     @media screen and (max-width: 480px) {
@@ -52,6 +52,14 @@ export const ProjectCard = styled(LinkRouter)`
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
     
+   @media screen and (max-width: 768px) {
+        height: 320px;
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 320px;
+    }
+
     &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;

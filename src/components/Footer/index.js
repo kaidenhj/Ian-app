@@ -41,14 +41,13 @@ const Footer = () => {
                             <FooterLinkItems>
                                 <FooterLinkTitle>Socials:</FooterLinkTitle>
                                 <FooterExternalLink href='https://www.linkedin.com/in/kaiden-jones-16888b2b2/'>LinkedIn</FooterExternalLink>
-                                <FooterExternalLink href='https://github.com/kaidenhj'>Github</FooterExternalLink>
                             </FooterLinkItems>
                         </FooterLinksWrapper>
                     </FooterLinksContainer>
                     <SocialMedia>
                         <SocialMediaWrap>
-                            <SocialLogo onClick={() => scrollToSection('home')}>Kaiden Jones</SocialLogo>
-                            <WebsiteRights>Kaiden Jones © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+                            <SocialLogo onClick={() => scrollToSection('home')}>Ian Denshaw</SocialLogo>
+                            <WebsiteRights>Ian Denshaw © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                             <SocialIcons>
                                 <SocialIconLink href='https://www.linkedin.com/in/iandenshaw/' target='_blank' aria-label='LinkedIn'>
                                     <FaLinkedin />

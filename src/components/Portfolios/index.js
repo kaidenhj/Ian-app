@@ -11,18 +11,18 @@ const Portfolio = () => {
             <ProjectsWrapper>
                 <ProjectCard to='/utilitiesProject'>
                     <ProjectIcon src={Icon1} />
-                    <ProjectH2>Utilities Database</ProjectH2>
-                    <ProjectP>Ithaca College Utilities Database System and Google Drive UI</ProjectP>
+                    <ProjectH2>Project 1</ProjectH2>
+                    <ProjectP>Description of project 1</ProjectP>
                 </ProjectCard>
                 <ProjectCard to='/tameProject'>
                     <ProjectIcon src={Icon2} />
-                    <ProjectH2>TAME</ProjectH2>
-                    <ProjectP>Adolecent - Time Assessment and Managment Evaluation</ProjectP>
+                    <ProjectH2>Project 2</ProjectH2>
+                    <ProjectP>Description of project 2</ProjectP>
                 </ProjectCard>
                 <ProjectCard to='/satelliteProject'>
                     <ProjectIcon src={Icon3} />
-                    <ProjectH2>SAM Habitat Distruction Model</ProjectH2>
-                    <ProjectP>Tracking Suburban Habitat Loss: An ML Approach to Satellite Image Analysis</ProjectP>
+                    <ProjectH2>Project 3</ProjectH2>
+                    <ProjectP>Description of project 3</ProjectP>
                 </ProjectCard>
             </ProjectsWrapper>
         </ProjectContainer>
